@@ -1,0 +1,19 @@
+plugins {
+    id "org.springframework.boot" version "2.0.3.RELEASE"
+    id "io.spring.dependency-management" version "1.0.5.RELEASE"
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compileOnly('org.projectlombok:lombok')
+    }
+}
