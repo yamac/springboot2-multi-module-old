@@ -1,11 +1,13 @@
 plugins {
     id "org.springframework.boot" version "2.0.4.RELEASE" apply false
     id "io.spring.dependency-management" version "1.0.6.RELEASE" apply false
+    id 'io.franzbecker.gradle-lombok' version '1.14' apply false
 }
 
 subprojects {
     apply plugin: 'java'
     apply plugin: 'eclipse'
+    apply plugin: 'io.franzbecker.gradle-lombok'
     apply plugin: 'org.springframework.boot'
     apply plugin: 'io.spring.dependency-management'
 
@@ -13,7 +15,10 @@ subprojects {
         mavenCentral()
     }
 
+    lombok {
+        version = "1.18.2"
+    }
+
     dependencies {
-        compileOnly('org.projectlombok:lombok')
     }
 }
