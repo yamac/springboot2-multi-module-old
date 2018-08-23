@@ -9,7 +9,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(properties = "example.message=Test")
+@SpringBootTest
 public class ExampleServiceTest {
 
     @Autowired
@@ -18,6 +18,6 @@ public class ExampleServiceTest {
     @Test
     public void testGetMessageReturnsCorrectValue() {
         assertThat(exampleService.getMessage()).isNotNull();
-        assertThat(exampleService.getMessage()).isEqualTo("Test");
+        assertThat(exampleService.getMessage()).contains("Hello World").contains("Test");
     }
 }
