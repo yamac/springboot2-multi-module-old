@@ -1,5 +1,5 @@
 plugins {
-    id "org.springframework.boot" version "2.0.4.RELEASE" apply false
+    id 'org.springframework.boot' version '2.0.4.RELEASE' apply false
 }
 
 subprojects {
@@ -14,7 +14,7 @@ subprojects {
     }
 
     dependencies {
-        compileOnly('org.projectlombok:lombok')
-        testCompileOnly('org.projectlombok:lombok')
+        compileOnly('org.projectlombok:lombok:1.18.2')
+        testCompileOnly('org.projectlombok:lombok:1.18.2')
     }
 }
