@@ -1,2 +1,2 @@
-include 'common'
-include 'web'
+include 'common-java'
+include 'web-java'

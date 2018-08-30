@@ -1,2 +1,0 @@
-spring.profiles.active: local-test
-spring.profiles.include: all
