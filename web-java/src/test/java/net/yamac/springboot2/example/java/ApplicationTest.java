@@ -35,6 +35,6 @@ public class ApplicationTest {
     public void testGetIndexReturnsCorrectValue() throws Exception {
         mvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(content().string(allOf(containsString("Hello World"), containsString("Test"))));
+                .andExpect(content().string(allOf(containsString("Hello World Java"), containsString("Test"))));
     }
 }

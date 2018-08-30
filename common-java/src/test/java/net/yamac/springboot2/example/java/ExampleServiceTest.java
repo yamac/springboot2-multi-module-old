@@ -18,6 +18,6 @@ public class ExampleServiceTest {
     @Test
     public void testGetMessageReturnsCorrectValue() {
         assertThat(exampleService.getMessage()).isNotNull();
-        assertThat(exampleService.getMessage()).contains("Hello World").contains("Test");
+        assertThat(exampleService.getMessage()).contains("Hello World Java").contains("Test");
     }
 }
