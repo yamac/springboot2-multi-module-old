@@ -5,10 +5,14 @@
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="common_main" target="1.10" />
-      <module name="common_test" target="1.10" />
-      <module name="web_main" target="1.10" />
-      <module name="web_test" target="1.10" />
+      <module name="common-java_main" target="1.10" />
+      <module name="common-java_test" target="1.10" />
+      <module name="common-kotlin_main" target="1.10" />
+      <module name="common-kotlin_test" target="1.10" />
+      <module name="web-java_main" target="1.10" />
+      <module name="web-java_test" target="1.10" />
+      <module name="web-kotlin_main" target="1.10" />
+      <module name="web-kotlin_test" target="1.10" />
     </bytecodeTargetLevel>
   </component>
 </project>

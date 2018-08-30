@@ -1,0 +1,12 @@
+---
+spring.profiles: local
+spring.profiles.include: common-local,web-local
+---
+spring.profiles: local-test
+spring.profiles.include: common-local,common-local-test,web-local,web-local-test
+---
+spring.profiles: beta
+spring.profiles.include: common-beta,web-beta
+---
+spring.profiles: beta-test
+spring.profiles.include: common-beta,common-beta-test,web-beta,web-beta-test

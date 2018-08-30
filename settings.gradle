@@ -1,2 +1,4 @@
-include 'common'
-include 'web'
+include 'common-java'
+include 'web-java'
+include 'common-kotlin'
+include 'web-kotlin'
